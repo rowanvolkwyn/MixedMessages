@@ -1,5 +1,5 @@
 let newCity;
-let team;
+let team = [];
 let league;
 
 const getNewCity = () => {
@@ -10,9 +10,49 @@ const getNewCity = () => {
 }
 
 const getTeam = () => {
-    let listOfTeams = ["Bulldogs", "Hawks", "Magpies", "Blues", "Tigers", "Saints", "Lions", "Demons", "Swans", "Cats"];
+    let listOfTeams = [
+        {
+            name: "Bulldogs",
+            location: "Western"
+        }, 
+        {
+            name: "Hawks",
+            location: "Hawthorn"
+        },
+        {
+            name: "Magpies",
+            location: "Collingwood"
+        },
+        {
+            name: "Blues",
+            location: "Carlton"
+        },
+        {   
+            name:"Tigers",
+            location: "Richmond"
+        },
+        {
+            name: "Saints",
+            location: "St. Kilda"
+        },
+        {
+            name: "Lions",
+            location: "Brisbane"
+        },
+        {   name: "Demons",
+            location: "Melbourne"
+        },
+        {
+            name: "Swans",
+            location: "Sydney"
+        },
+        {
+            name: "Cats",
+            location: "Geelong"
+        }];
     let indexNumber = (Math.floor(Math.random() * listOfTeams.length));
-    team = listOfTeams[indexNumber];
+    team.push(listOfTeams[indexNumber].name);
+    team.push(listOfTeams[indexNumber].location);
     return team;
 }
 
@@ -33,4 +73,4 @@ console.log(league);
 
 
 // Print the randomised message
-console.log(`BREAKING NEWS: The ${team} have announced they are relocating to ${newCity} to join the ${league} as the ${newCity} ${team}`);
+console.log(`BREAKING NEWS: The ${team[1]} ${team[0]} have announced they are relocating to ${newCity} to join the ${league} as the ${newCity} ${team[0]}`);
