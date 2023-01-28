@@ -63,14 +63,9 @@ const getLeague = () => {
     return league;
 }
 
-getNewCity();
-getTeam();
-getLeague();
-
 console.log(newCity);
 console.log(team);
 console.log(league);
-
 
 // Print the randomised message
 console.log(`BREAKING NEWS: The ${team[1]} ${team[0]} have announced they are relocating to ${newCity} to join the newly expanded ${league} as the ${newCity} ${team[0]}`);
