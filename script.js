@@ -3,7 +3,7 @@ let team = [];
 let league;
 
 const getNewCity = () => {
-    let listOfCities = ["San Franciso", "Chicago", "New York", "Miami", "London", "Melbourne", "Sydney", "Washington", "Los Angeles", "Las Vegas"];
+    let listOfCities = ["San Franciso", "Chicago", "New York", "Miami", "Boston", "Philadelphia", "Houston", "Washington", "Los Angeles", "Las Vegas"];
     let indexNumber = (Math.floor(Math.random() * listOfCities.length));
     newCity = listOfCities[indexNumber];
     return newCity;
@@ -73,4 +73,4 @@ console.log(league);
 
 
 // Print the randomised message
-console.log(`BREAKING NEWS: The ${team[1]} ${team[0]} have announced they are relocating to ${newCity} to join the ${league} as the ${newCity} ${team[0]}`);
+console.log(`BREAKING NEWS: The ${team[1]} ${team[0]} have announced they are relocating to ${newCity} to join the newly expanded ${league} as the ${newCity} ${team[0]}`);
